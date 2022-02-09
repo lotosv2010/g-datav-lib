@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Example</title>
+  <script src="https://unpkg.com/vue@next"></script>
+  <script src="../dist/datav.js"></script>
+</head>
+<body>
+  <div id="app">
+    <div>
+      <div>{{message}}</div>
+      <div><test-component1 /></div>
+      <div><test-component2 /></div>
+      <div><test-component3 /></div>
+    </div>
+  </div>
+  
+  <script>
+    console.log(datav)
+    Vue.createApp({
+      setup() {
+        return {
+          message: 'world'
+        }
+      }
+    }).use(datav).mount('#app');
+    // use(datav.Test1).use(datav.Test2).use(datav.Test3).mount('#app');
+  </script>
+</body>
+</html>
