@@ -1,25 +1,18 @@
-import Test1 from './components/test1';
-import Test2 from './components/test2';
-import Test3 from './components/test3';
-
-// function test1 (Vue) {
-//   Vue.use(Test1);
-// }
-// function test2 (Vue) {
-//   Vue.use(Test2);
-// }
-// function test3 (Vue) {
-//   Vue.use(Test3);
-// }
+import GIconArrow from './components/icon-arrow';
+import GIconCross from './components/icon-cross';
+import GIconMore from './components/icon-more';
+import GIcon from './components/icon';
 
 const install = (Vue) => {
-  Vue.use(Test1);
-  Vue.use(Test2);
-  Vue.use(Test3);
+  Vue.use(GIconArrow);
+  Vue.use(GIconCross);
+  Vue.use(GIconMore);
+  Vue.use(GIcon);
 }
 export default {
   install,
-  Test1,
-  Test2,
-  Test3
+  GIconArrow,
+  GIconCross,
+  GIconMore,
+  GIcon
 };
