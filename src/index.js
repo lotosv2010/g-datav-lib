@@ -3,6 +3,7 @@ import GIconCross from './components/icon-cross';
 import GIconMore from './components/icon-more';
 import GIcon from './components/icon';
 import GLoading from './components/loading';
+import GFlyBox from './components/fly-box';
 
 const install = (Vue) => {
   Vue.use(GIconArrow);
@@ -10,6 +11,7 @@ const install = (Vue) => {
   Vue.use(GIconMore);
   Vue.use(GIcon);
   Vue.use(GLoading);
+  Vue.use(GFlyBox);
 }
 export default {
   install,
@@ -17,5 +19,6 @@ export default {
   GIconCross,
   GIconMore,
   GIcon,
-  GLoading
+  GLoading,
+  GFlyBox
 };
