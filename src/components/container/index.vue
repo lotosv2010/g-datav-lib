@@ -69,7 +69,7 @@ export default {
       dom.style.transform = `scale(${widthScale}, ${heightScale})`;
     };
     const onResize = async (e) => {
-      console.log(e)
+      // console.log(e)
       await initSize();
       updateScale();
     };
