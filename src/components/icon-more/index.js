@@ -1,6 +1,6 @@
-import Test from './index.vue';
+import GIconMore from './index.vue';
 
-const testComponent1 = (Vue) => {
-  Vue.component(Test.name, Test);
+const iconMore = (Vue) => {
+  Vue.component(GIconMore.name, GIconMore);
 }
-export default testComponent1;
+export default iconMore;

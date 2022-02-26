@@ -6,6 +6,7 @@ import GLogo from './components/logo';
 import GLoading from './components/loading';
 import GFlyBox from './components/fly-box';
 import GContainer from './components/container';
+import GVueCountTo from './components/vue-count-to';
 
 const install = (Vue) => {
   Vue.use(GIconArrow);
@@ -16,6 +17,7 @@ const install = (Vue) => {
   Vue.use(GFlyBox);
   Vue.use(GContainer);
   Vue.use(GLogo);
+  Vue.use(GVueCountTo);
 }
 export default {
   install,
@@ -26,5 +28,6 @@ export default {
   GLoading,
   GFlyBox,
   GContainer,
-  GLogo
+  GLogo,
+  GVueCountTo
 };
