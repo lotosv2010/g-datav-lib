@@ -1,9 +1,9 @@
 <template>
-  <div class="echarts"></div>
+  <div class="echarts" ref="root"></div>
 </template>
 
 <script>
-import { watch, onMounted } from "vue";
+import { watch, onMounted, shallowRef } from "vue";
 import Echarts from "echarts";
 
 export default {
@@ -18,12 +18,14 @@ export default {
     }
   },
   setup(ctx) {
-    let dom;
     let chart;
+    const root = shallowRef(); // 也可以用 uuid 解决，dom 中class重复的问题
     const initChart = () => {
+      if (!root.value) {
+        return;
+      }
       if(!chart) {
-        dom = document.querySelector('.echarts');
-        chart = Echarts.init(dom, ctx.theme);
+        chart = Echarts.init(root.value, ctx.theme);
       }
       ctx.options && chart.setOption(ctx.options);
     }
@@ -33,7 +35,9 @@ export default {
     watch(() => ctx.options, () => {
       initChart();
     });
-    return{}
+    return{
+      root
+    }
   }
 }
 </script>
