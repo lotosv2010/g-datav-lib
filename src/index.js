@@ -7,6 +7,7 @@ import GLoading from './components/loading';
 import GFlyBox from './components/fly-box';
 import GContainer from './components/container';
 import GVueCountTo from './components/vue-count-to';
+import GVueEcharts from './components/vue-echarts';
 
 const install = (Vue) => {
   Vue.use(GIconArrow);
@@ -18,6 +19,7 @@ const install = (Vue) => {
   Vue.use(GContainer);
   Vue.use(GLogo);
   Vue.use(GVueCountTo);
+  Vue.use(GVueEcharts);
 }
 export default {
   install,
@@ -29,5 +31,6 @@ export default {
   GFlyBox,
   GContainer,
   GLogo,
-  GVueCountTo
+  GVueCountTo,
+  GVueEcharts
 };

@@ -17,7 +17,8 @@ export default {
     format: 'umd',  // 必须
     name: 'datav',
     globals: {
-      vue: 'Vue' // 告诉rollup全局变量Vue即是vue
+      vue: 'Vue', // 告诉rollup全局变量Vue即是vue
+      echarts: "Echarts"
     },
     // exports: 'named'
   }, {
@@ -38,5 +39,5 @@ export default {
       plugins: []
     }), // 支持scss文件
   ],
-  external: ['vue']
+  external: ['vue', 'echarts']
 }
