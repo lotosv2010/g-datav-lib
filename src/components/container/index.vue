@@ -8,7 +8,7 @@
 
 <script>
 import { ref, getCurrentInstance, onMounted, onUnmounted, nextTick } from 'vue';
-import { debounce } from 'lodash';
+import debounce from 'lodash/debounce';
 
 export default {
   name: 'GContainer',

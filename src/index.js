@@ -8,6 +8,7 @@ import GFlyBox from './components/fly-box';
 import GContainer from './components/container';
 import GVueCountTo from './components/vue-count-to';
 import GVueEcharts from './components/vue-echarts';
+import GBaseScrollList from './components/base-scroll-list';
 
 const install = (Vue) => {
   Vue.use(GIconArrow);
@@ -20,6 +21,7 @@ const install = (Vue) => {
   Vue.use(GLogo);
   Vue.use(GVueCountTo);
   Vue.use(GVueEcharts);
+  Vue.use(GBaseScrollList);
 }
 export default {
   install,
@@ -32,5 +34,6 @@ export default {
   GContainer,
   GLogo,
   GVueCountTo,
-  GVueEcharts
+  GVueEcharts,
+  GBaseScrollList
 };
